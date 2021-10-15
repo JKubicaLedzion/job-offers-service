@@ -21,8 +21,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@AutoConfigureMockMvc
-@ExtendWith(MockitoExtension.class)
 @WebMvcTest(JobOffersController.class)
 class JobOffersControllerTest {
 
