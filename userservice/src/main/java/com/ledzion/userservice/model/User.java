@@ -2,7 +2,6 @@ package com.ledzion.userservice.model;
 
 import lombok.Data;
 import lombok.ToString;
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -21,7 +20,6 @@ public class User {
 
     private String name;
 
-    //TODO: fix problem with creation of date
     @CreatedDate
     private LocalDate creationDate;
 }
