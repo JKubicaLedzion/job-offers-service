@@ -1,22 +1,17 @@
-version: "3"
+version: "3.8"
 services:
   database:
-#   na wersji mongo:3.2.4 nie dziala
     image: mongo:4.4.3
-#    nie potrzebne
-#    container_name: database
     ports:
       - 27017:27017
-#    powoduje blad
-#    command: --smallfiles
   users:
-    image: users
+    build: ./userservice
     ports:
       - 8080:8080
     links:
       - database
   job-offers:
-    image: job-offers
+    build: ./jobofferservice
     ports:
       - 8081:8081
     links:
