@@ -54,7 +54,7 @@ class UserRepositoryTest {
         Assertions.assertThat(user.getLogin()).isEqualTo("hr@abc.com");
         Assertions.assertThat(user.getPassword()).isEqualTo("345%6fjifhewjkd");
         Assertions.assertThat(user.getName()).isEqualTo("ABC Company");
-        Assertions.assertThat(user.getCreationDate()).isEqualTo(LocalDate.of(2021, 10, 11));
+        Assertions.assertThat(user.getCreationDate()).isEqualTo(LocalDate.now());
     }
 
     private void cleanDatabase() {

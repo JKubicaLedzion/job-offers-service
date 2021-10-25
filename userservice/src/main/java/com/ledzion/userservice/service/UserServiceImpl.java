@@ -26,9 +26,16 @@ public class UserServiceImpl implements UserService {
     public void updateUser(User user) {
         //TODO: validate user details and in case user details do not meet requirements throw exception
         // InvalidUserDetailsException
-        userRepository.save(user);
+        User updatedUser = userRepository.findByLogin(user.getLogin());
+        copyUserNameAndPassword(user, updatedUser);
+        userRepository.save(updatedUser);
         //TODO: in case of update of user name call UpdateUserNameProducer to send a message to a queue allowing to
         // job offers service read message and update offers with updated name
+    }
+
+    private void copyUserNameAndPassword(User user, User updatedUser) {
+        updatedUser.setName(user.getName());
+        updatedUser.setPassword(user.getPassword());
     }
 
     @Override

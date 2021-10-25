@@ -2,6 +2,7 @@ package com.ledzion.jobofferservice.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Version;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
@@ -12,6 +13,9 @@ public class JobOffer {
 
     @Id
     private String id;
+
+    @Version
+    private Long version;
 
     private Category category;
 

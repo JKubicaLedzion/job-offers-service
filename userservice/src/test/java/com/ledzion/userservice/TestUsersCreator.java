@@ -23,7 +23,7 @@ public class TestUsersCreator {
         user.setLogin("hr@abc.com");
         user.setPassword("345%6fjifhewjkd");
         user.setName("ABC Company");
-        user.setCreationDate(LocalDate.of(2021, 10, 11));
+        user.setCreationDate(LocalDate.now());
 
         return user;
     }
@@ -33,7 +33,7 @@ public class TestUsersCreator {
         user.setLogin("hr@xyz.com");
         user.setPassword("gtsdwew%$12");
         user.setName("XYZ Company");
-        user.setCreationDate(LocalDate.of(2021, 10, 11));
+        user.setCreationDate(LocalDate.now());
 
         return user;
     }
@@ -43,7 +43,7 @@ public class TestUsersCreator {
         user.setLogin("hr@abc.com");
         user.setPassword("345%6fjifhewjkd");
         user.setName("ABC Company");
-        user.setCreationDate(LocalDate.of(2021, 10, 11));
+        user.setCreationDate(LocalDate.now());
 
         return user;
     }
@@ -53,7 +53,7 @@ public class TestUsersCreator {
         user.setLogin("hr@xyz.com");
         user.setPassword("gtsdwew%$12");
         user.setName("XYZ Company");
-        user.setCreationDate(LocalDate.of(2021, 10, 11));
+        user.setCreationDate(LocalDate.now());
 
         return user;
     }

@@ -65,7 +65,7 @@ class UserServiceImplTest {
         Assertions.assertThat(resultUser.getLogin()).isEqualTo("hr@abc.com");
         Assertions.assertThat(resultUser.getPassword()).isEqualTo("345%6fjifhewjkd");
         Assertions.assertThat(resultUser.getName()).isEqualTo("ABC Company");
-        Assertions.assertThat(resultUser.getCreationDate()).isEqualTo(LocalDate.of(2021, 10, 11));
+        Assertions.assertThat(resultUser.getCreationDate()).isEqualTo(LocalDate.now());
     }
 
     @Test
